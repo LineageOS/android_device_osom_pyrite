@@ -6,7 +6,6 @@
  */
 
 #define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.pyrite"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service.pyrite"
 
 #include <hardware/hw_auth_token.h>
 
