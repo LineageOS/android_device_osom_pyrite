@@ -1,4 +1,4 @@
-# Unpinned blobs from SHIFT/otter/otter:14/SOS.6.0.20241030/20241030:user/release-keys
+# Unpinned blobs from SHIFT/otter/otter:14/SOS.6.0.20250123/20250123:user/release-keys
 
 # Current blobs with ELF checks disabled:
 # libcne, libwqe, lowi-server, mutualex depend on libwpa_client, which is a gnu makefile target
