@@ -60,19 +60,6 @@ on init
     chown root system /sys/fs/cgroup/memory/bg/tasks
     chmod 0660 /sys/fs/cgroup/memory/bg/tasks
 
-    # Support mount point for vibrator
-    chown system system /sys/class/leds/drv26xx_haptic/activate
-    chown system system /sys/class/leds/drv26xx_haptic/duration
-    chown system system /sys/class/leds/drv26xx_haptic/state
-    chown system system /sys/class/leds/drv26xx_haptic/calib
-    chown system system /sys/class/leds/drv26xx_haptic/CalBemf
-    chown system system /sys/class/leds/drv26xx_haptic/CalComp
-    chown system system /sys/class/leds/drv26xx_haptic/CalGain
-    chown system system /sys/class/leds/drv26xx_haptic/calib
-    chown system system /sys/class/leds/drv26xx_haptic/diag
-    chown system system /sys/class/leds/drv26xx_haptic/f0_lsb
-    chown system system /sys/class/leds/drv26xx_haptic/f0_msb
-
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
