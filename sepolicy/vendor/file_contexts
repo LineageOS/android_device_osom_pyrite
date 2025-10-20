@@ -3,6 +3,3 @@
 
 # Fingerprint
 /dev/goodix_fp                                                             u:object_r:fingerprint_device:s0
-
-# Vibrator
-/vendor/bin/vibratorcal                                                    u:object_r:vendor_vibratorcal_exec:s0
