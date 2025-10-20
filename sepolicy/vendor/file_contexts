@@ -5,5 +5,4 @@
 /dev/goodix_fp                                                             u:object_r:fingerprint_device:s0
 
 # Vibrator
-/vendor/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.pyrite            u:object_r:hal_vibrator_default_exec:s0
 /vendor/bin/vibratorcal                                                    u:object_r:vendor_vibratorcal_exec:s0
