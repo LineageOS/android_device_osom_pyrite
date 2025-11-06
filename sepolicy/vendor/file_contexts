@@ -1,5 +1,2 @@
-# Display
-/sys/devices/virtual/display/panel(/.*)?                                   u:object_r:vendor_sysfs_graphics:s0
-
 # Fingerprint
 /dev/goodix_fp                                                             u:object_r:fingerprint_device:s0
