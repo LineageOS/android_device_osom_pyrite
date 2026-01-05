@@ -235,6 +235,7 @@ $(call soong_config_set_bool,stagefright,target_disable_thumbnail_block_model,tr
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc-service.st \
     com.android.nfc_extras \
     Tag
 
