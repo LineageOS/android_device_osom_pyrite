@@ -388,12 +388,6 @@ on post-fs-data
     restorecon /data/vendor/goodix/gf_data
     chmod 0770 /mnt/vendor/persist/goodix
 
-service nqnfcinfo /system/vendor/bin/nqnfcinfo
-    class late_start
-    group nfc
-    user system
-    oneshot
-
 service iop /system/vendor/bin/iop
     class main
     user root
