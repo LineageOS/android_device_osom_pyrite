@@ -59,13 +59,6 @@
         <item>eutran5gc,15</item>
     </string-array>
 
-    <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
-    <integer-array name="config_udfps_sensor_props" translatable="false">
-        <item>540</item>  <!-- <item>sensorLocationX</item> -->
-        <item>2178</item> <!-- <item>sensorLocationY</item> -->
-        <item>90</item>   <!-- <item>sensorRadius</item> -->
-    </integer-array>
-
     <!-- List of comma separated package names for which we the system will not show crash, ANR,
          etc. dialogs. -->
     <string name="config_appsNotReportingCrashes" translatable="false">com.google.android.euicc</string>
