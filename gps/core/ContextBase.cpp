@@ -395,7 +395,7 @@ void ContextBase::setEngineCapabilities(uint64_t supportedMsgMask,
 
                     if (arrayIndex < MAX_FEATURE_LENGTH) {
                         /* To disable the feature we need to reset the bit on the "bitPos"
-                           position, so shift a "1" to the left by "bitPos" */
+                           position, so osom a "1" to the left by "bitPos" */
                         ContextBase::sFeaturesSupported[arrayIndex] &= ~(1 << bitPos);
                     }
                 }

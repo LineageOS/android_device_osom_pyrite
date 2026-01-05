@@ -313,8 +313,8 @@ typedef uint32_t LocGpsMeasurementFlags;
 #define LOC_GPS_MEASUREMENT_HAS_CARRIER_PHASE_UNCERTAINTY         (1<<12)
 #define LOC_GPS_MEASUREMENT_HAS_BIT_NUMBER                        (1<<13)
 #define LOC_GPS_MEASUREMENT_HAS_TIME_FROM_LAST_BIT                (1<<14)
-#define LOC_GPS_MEASUREMENT_HAS_DOPPLER_SHIFT                     (1<<15)
-#define LOC_GPS_MEASUREMENT_HAS_DOPPLER_SHIFT_UNCERTAINTY         (1<<16)
+#define LOC_GPS_MEASUREMENT_HAS_DOPPLER_OSOM                     (1<<15)
+#define LOC_GPS_MEASUREMENT_HAS_DOPPLER_OSOM_UNCERTAINTY         (1<<16)
 #define LOC_GPS_MEASUREMENT_HAS_USED_IN_FIX                       (1<<17)
 #define LOC_GPS_MEASUREMENT_HAS_UNCORRECTED_PSEUDORANGE_RATE      (1<<18)
 
@@ -1655,8 +1655,8 @@ typedef struct {
     LocGpsLossOfLock loss_of_lock;
     int32_t bit_number;
     int16_t time_from_last_bit_ms;
-    double doppler_shift_hz;
-    double doppler_shift_uncertainty_hz;
+    double doppler_osom_hz;
+    double doppler_osom_uncertainty_hz;
     LocGpsMultipathIndicator multipath_indicator;
     double snr_db;
     double elevation_deg;
@@ -1813,8 +1813,8 @@ typedef struct {
      * A positive 'uncorrected' value indicates that the SV is moving away from the receiver.
      *
      * The sign of the 'uncorrected' 'pseudorange rate' and its relation to the sign of 'doppler
-     * shift' is given by the equation:
-     *      pseudorange rate = -k * doppler shift   (where k is a constant)
+     * osom' is given by the equation:
+     *      pseudorange rate = -k * doppler osom   (where k is a constant)
      *
      * This should be the most accurate pseudorange rate available, based on
      * fresh signal measurements from this channel.

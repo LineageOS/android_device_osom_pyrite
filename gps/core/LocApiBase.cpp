@@ -247,7 +247,7 @@ void LocApiBase::removeAdapter(LocAdapterBase* adapter)
         if (mLocAdapters[i] == adapter) {
             mLocAdapters[i] = NULL;
 
-            // shift the rest of the adapters up so that the pointers
+            // osom the rest of the adapters up so that the pointers
             // in the array do not have holes.  This should be more
             // performant, because the array maintenance is much much
             // less frequent than event handlings, which need to linear

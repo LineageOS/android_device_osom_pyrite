@@ -104,7 +104,7 @@ void loc_util_trim_space(char *org_string)
             first_nonspace = scan_ptr;
         }
         //Once the first non-space character is found in the
-        //above check, keep shifting the characters to the left
+        //above check, keep osoming the characters to the left
         //to replace the spaces
         if (first_nonspace != NULL) {
             *(write_ptr++) = *scan_ptr;
