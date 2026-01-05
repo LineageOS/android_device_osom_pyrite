@@ -144,7 +144,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.otter
+    android.hardware.biometrics.fingerprint@2.3-service.pyrite
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -377,7 +377,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.otter
+    vendor.qti.hardware.vibrator.service.pyrite
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vibrator/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
@@ -406,4 +406,4 @@ PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/shift/otter/otter-vendor.mk)
+$(call inherit-product, vendor/osom/pyrite/pyrite-vendor.mk)
