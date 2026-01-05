@@ -13,8 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.otter"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.otter"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.3-service.pyrite"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.3-service.pyrite"
 
 #include <hardware/hw_auth_token.h>
 

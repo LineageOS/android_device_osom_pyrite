@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/shift/otter
+DEVICE_PATH := device/osom/pyrite
 
 # A/B
 AB_OTA_UPDATER := true
@@ -46,7 +46,7 @@ BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := otter
+TARGET_BOOTLOADER_BOARD_NAME := ingot
 
 # Display
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
@@ -89,9 +89,9 @@ BOARD_KERNEL_CMDLINE := \
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/otter.config
+TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/ext_config/pyrite.config
 TARGET_KERNEL_NO_GCC := true
-TARGET_KERNEL_SOURCE := kernel/shift/qcm6490
+TARGET_KERNEL_SOURCE := kernel/osom/sm8350
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
@@ -180,4 +180,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/shift/otter/BoardConfigVendor.mk
+include vendor/osom/pyrite/BoardConfigVendor.mk
