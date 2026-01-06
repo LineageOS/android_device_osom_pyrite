@@ -146,15 +146,15 @@ TARGET_USERIMAGES_USE_F2FS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-BOOT_SECURITY_PATCH := 2024-03-05
-VENDOR_SECURITY_PATCH := 2024-03-05
+STOCK_SECURITY_PATCH := 2022-03-05 # Latest stock update available
+BOOT_SECURITY_PATCH := $(STOCK_SECURITY_PATCH)
+VENDOR_SECURITY_PATCH := $(STOCK_SECURITY_PATCH)'
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # Verified Boot
-STOCK_SECURITY_PATCH := 2024-10-05 # Latest stock update available
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 BOARD_AVB_VBMETA_SYSTEM := system system_ext product
