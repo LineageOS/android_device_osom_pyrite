@@ -91,25 +91,26 @@
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-    <!-- Boolean indicating if restoring network selection should be skipped,
-         the restoring is handled by modem if it is true -->
-    <bool name="skip_restoring_network_selection">true</bool>
+    <!-- An array describing the screen's backlight values corresponding to the brightness
+         values in the config_screenBrightnessNits array.
 
-    <!-- Array of output values for LCD backlight corresponding to the lux values
-         in the config_autoBrightnessLevels array.  This array should have size one greater
-         than the size of the config_autoBrightnessLevels array.
-         The brightness values must be between 0 and 255 and be non-decreasing.
-         This must be overridden in platform specific overlays -->
-    <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>10</item>
-        <item>20</item>
-        <item>40</item>
-        <item>70</item>
-        <item>110</item>
-        <item>160</item>
-        <item>200</item>
+         This array should be equal in size to config_screenBrightnessBacklight. -->
+    <integer-array name="config_screenBrightnessBacklight">
+        <item>1</item>
         <item>255</item>
     </integer-array>
+
+    <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
+         values in the config_screenBrightnessBacklight array.  On OLED displays these  values
+         should be measured with an all white image while the display is in the fully on state.
+         Note that this value should *not* reflect the maximum brightness value for any high
+         brightness modes but only the maximum brightness value obtainable in a sustainable manner.
+
+         This array should be equal in size to config_screenBrightnessBacklight -->
+    <array name="config_screenBrightnessNits">
+        <item>4.0</item>
+        <item>700.0</item>
+    </array>
 
     <!-- Array of light sensor lux values to define our levels for auto backlight brightness support.
          The N entries of this array define N + 1 control points as follows:
@@ -132,14 +133,82 @@
 
          Must be overridden in platform specific overlays -->
     <integer-array name="config_autoBrightnessLevels">
-        <item>10</item>
-        <item>30</item>
-        <item>60</item>
-        <item>100</item>
-        <item>150</item>
-        <item>210</item>
-        <item>255</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>20</item>
+        <item>33</item>
+        <item>55</item>
+        <item>90</item>
+        <item>148</item>
+        <item>245</item>
+        <item>403</item>
+        <item>665</item>
+        <item>1097</item>
+        <item>1808</item>
+        <item>2981</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
     </integer-array>
+
+    <!-- Array of desired screen brightness in nits corresponding to the lux values
+      in the config_autoBrightnessLevels array. As with config_screenBrightnessMinimumNits and
+      config_screenBrightnessMaximumNits, the display brightness is defined as the measured
+      brightness of an all-white image.
+
+      If this is defined then:
+      - config_autoBrightnessLcdBacklightValues should not be defined
+      - config_screenBrightnessNits must be defined
+      - config_screenBrightnessBacklight must be defined
+
+      This array should have size one greater than the size of the config_autoBrightnessLevels
+      array. The brightness values must be non-negative and non-decreasing. This must be
+      overridden in platform specific overlays -->
+    <array name="config_autoBrightnessDisplayValuesNits">
+      <item>7.194677000</item>  <!--  0 - 1 -->
+      <item>13.94682655</item>  <!--  1 - 2 -->
+      <item>25.68752150</item>  <!--  2 - 3 -->
+      <item>30.17095379</item>  <!--  3 - 4 -->
+      <item>33.62349032</item>  <!--  4 - 8 -->
+      <item>42.87027027</item>  <!--  8 - 12 -->
+      <item>49.13280954</item>  <!--  12 - 20 -->
+      <item>57.71495002</item>  <!--  20 - 33 -->
+      <item>66.74650024</item>  <!--  33 - 55 -->
+      <item>72.44903155</item>  <!--  55 - 90 -->
+      <item>86.11363951</item>  <!--  90 - 148 -->
+      <item>103.5789835</item>  <!--  148 - 245 -->
+      <item>127.4614546</item>  <!--  245 - 403 -->
+      <item>162.6588588</item>  <!--  403 - 665 -->
+      <item>194.0250112</item>  <!--  665 - 1097 -->
+      <item>250.1862664</item>  <!--  1097 - 1808 -->
+      <item>317.7865578</item>  <!--  1808 - 2981 -->
+      <item>393.4769222</item>  <!--  2981 - 5000 -->
+      <item>481.4012087</item>  <!--  5000 - 10000 -->
+      <item>700.0000000</item>  <!--  10000 -20000 -->
+      <item>900.0000000</item>  <!--  20000+ -->
+    </array>
+
+    <!-- Nonlinear coefficients for maximum panel brightness of 500 nits -->
+    <string-array name="config_reduceBrightColorsCoefficientsNonlinear">
+        <!-- a-coefficient --> <item>-0.4553233597</item>
+        <!-- b-coefficient --> <item>-0.2380196976</item>
+        <!-- y-intercept --> <item>0.9801096801</item>
+    </string-array>
+
+    <!-- Linear coefficients for maximum panel brightness of 500 nits -->
+    <string-array name="config_reduceBrightColorsCoefficients">
+        <!-- a-coefficient --> <item>0.0</item>
+        <!-- b-coefficient --> <item>-0.96</item>
+        <!-- y-intercept --> <item>1.0</item>
+    </string-array>
+
+    <!-- Boolean indicating if restoring network selection should be skipped,
+         the restoring is handled by modem if it is true -->
+    <bool name="skip_restoring_network_selection">true</bool>
 
     <!-- The default refresh rate for a given device. Change this value to set a higher default
          refresh rate. If the hardware composer on the device supports display modes with a higher
