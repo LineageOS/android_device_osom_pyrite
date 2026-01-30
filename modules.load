@@ -4,7 +4,6 @@ bolero_cdc_dlkm.ko
 bt_fm_slim.ko
 btpower.ko
 camera.ko
-dw3000.ko
 e4000.ko
 fc0011.ko
 fc0012.ko
@@ -13,16 +12,12 @@ fc2580.ko
 hdmi_dlkm.ko
 hid-aksys.ko
 it913x.ko
-lkdtm.ko
 llcc_perfmon.ko
 m88rs6000t.ko
 machine_dlkm.ko
 max2165.ko
 mbhc_dlkm.ko
 mc44s803.ko
-mcps802154.ko
-mcps802154_region_fira.ko
-mcps802154_region_nfcc_coex.ko
 msi001.ko
 msm_drm.ko
 mt2060.ko
