@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23f4a68c_4f2dfa24",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 5
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-03-18T07:11:28Z",
+      "side": 1,
+      "message": "why is it even renamed when ro.hardware.camera\u003dingot would have been enough?",
+      "revId": "a7a0569664a5f1bb601bc2344e870d33ab07a8b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
