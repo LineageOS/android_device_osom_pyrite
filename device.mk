@@ -256,6 +256,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigResCommon \
     FrameworksResCommon \
     FrameworksResTarget \
+    LineageSDKResCommon \
     NcmTetheringOverlay \
     SettingsProviderResCommon \
     SettingsResCommon \

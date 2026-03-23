@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2015 The CyanogenMod Project
-     SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Defines the actions shown in advanced reboot submenu -->
-    <string-array name="config_restartActionsList">
-        <item>restart</item>
-        <item>restart_recovery</item>
-        <item>restart_fastboot</item>
-        <item>restart_bootloader</item>
-    </string-array>
-
-    <!-- Whether device has screen with higher aspect ratio -->
-    <bool name="config_haveHigherAspectRatioScreen">true</bool>
-
-    <!-- Some devices might require always setting the toggle instead of set based on current toggle
-         value. If this is the case, set this config to true to let the toggle provider always set
-         charging enabled status regardless of the current status. -->
-    <bool name="config_chargingControlToggleSetAlways">true</bool>
-
     <!-- All the capabilities of the LEDs on this device, stored as a bit field.
          This integer should equal the sum of the corresponding value for each
          of the following capabilities present:
@@ -66,4 +49,20 @@
          For example, a device with notification and battery lights that supports
          pulsating and RGB control would set this config to 75. -->
     <integer name="config_deviceLightCapabilities">323</integer>
+
+    <!-- Defines the actions shown in advanced reboot submenu -->
+    <string-array name="config_restartActionsList">
+        <item>restart</item>
+        <item>restart_recovery</item>
+        <item>restart_fastboot</item>
+        <item>restart_bootloader</item>
+    </string-array>
+
+    <!-- Whether device has a screen with a higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
+    <!-- Some devices might require always setting the toggle instead of set based on current toggle
+         value. If this is the case, set this config to true to let the toggle provider always set
+         charging enabled status regardless of the current status. -->
+    <bool name="config_chargingControlToggleSetAlways">true</bool>
 </resources>
