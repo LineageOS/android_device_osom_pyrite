@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     SPDX-FileCopyrightText: 2024 The LineageOS Project
+     SPDX-FileCopyrightText: The LineageOS Project
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <!-- Whether to show a warning notification when device's skin temperature is high. -->
+    <integer name="config_showTemperatureWarning">1</integer>
+
+    <!-- Whether to show a alarm dialog when device's usb port is overheating. -->
+    <integer name="config_showUsbPortAlarm">1</integer>
+
     <!-- A path similar to frameworks/base/core/res/res/values/config.xml
       config_mainBuiltInDisplayCutout that describes a path larger than the exact path of a outer
       display cutout. If present as well as config_enableDisplayCutoutProtection is set to true,
@@ -13,22 +19,11 @@
       This path will only be drawn when the front-facing camera turns on, otherwise the main
       DisplayCutout path will be rendered
        -->
-    <string translatable="false" name="config_frontBuiltInDisplayCutoutProtection">
-        M 497,46.5
-        a 43,43 0 1,0 86,0
-        a 43,43 0 1,0 -86,0
-        Z
-    </string>
+    <string name="config_frontBuiltInDisplayCutoutProtection" translatable="false">M 497,46.5 a 43,43 0 1,0 86,0 a 43,43 0 1,0 -86,0 Z</string>
 
     <!-- ID for the camera of outer display that needs extra protection -->
-    <string translatable="false" name="config_protectedCameraId">1</string>
+    <string name="config_protectedCameraId" translatable="false">1</string>
 
     <!--  Flag to turn on the rendering of the above path or not  -->
     <bool name="config_enableDisplayCutoutProtection">true</bool>
-
-    <!-- Whether to show a warning notification when device's skin temperature is high. -->
-    <integer name="config_showTemperatureWarning">1</integer>
-
-    <!-- Whether to show a alarm dialog when device's usb port is overheating. -->
-    <integer name="config_showUsbPortAlarm">1</integer>
 </resources>
