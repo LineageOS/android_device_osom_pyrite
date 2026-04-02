@@ -150,7 +150,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Security patch level
 STOCK_SECURITY_PATCH := 2022-03-05 # Latest stock update available
 BOOT_SECURITY_PATCH := $(STOCK_SECURITY_PATCH)
-VENDOR_SECURITY_PATCH := $(STOCK_SECURITY_PATCH)'
+VENDOR_SECURITY_PATCH := $(STOCK_SECURITY_PATCH)
 
 # SEPolicy
 include device/qcom/sepolicy_vndr/SEPolicy.mk
