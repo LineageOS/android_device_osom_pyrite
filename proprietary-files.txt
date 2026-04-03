@@ -76,6 +76,10 @@ vendor/lib/libqtigef.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
+# Authsecret
+vendor/bin/hw/android.hardware.authsecret@1.0-service-qti
+vendor/etc/init/android.hardware.authsecret@1.0-service-qti.rc
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -317,6 +321,7 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libspectre.so
 
 # Camera firmware
+vendor/firmware/CAMERA_ICP.elf
 vendor/firmware/CAMERA_ICP_170.elf
 
 # CDSP
@@ -534,6 +539,16 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
+# EID
+vendor/bin/hw/vendor.qti.hardware.eid@1.0-service
+vendor/etc/init/vendor.qti.hardware.eid@1.0-service.rc
+vendor/lib64/hw/vendor.qti.hardware.eid@1.0-impl.so
+vendor/lib64/libGPTEE_vendor.so
+vendor/lib64/vendor.qti.hardware.eid@1.0.so
+vendor/lib64/vendor.qti.hardware.trustedui@1.0.so
+vendor/lib64/vendor.qti.hardware.trustedui@1.1.so
+vendor/lib64/vendor.qti.hardware.trustedui@1.2.so
+
 # Embedded Secure Element power manager
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
 vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
@@ -544,16 +559,68 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 # Euicc - from otter SOS.6.2.G-RELEASE-20250624
 product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|74ccc6d238178529311808f5da3b383a03117bba
 
+
+# EVASS-LT Firmware
+vendor/firmware/evass-lt.b00
+vendor/firmware/evass-lt.b01
+vendor/firmware/evass-lt.b02
+vendor/firmware/evass-lt.b03
+vendor/firmware/evass-lt.b04
+vendor/firmware/evass-lt.b05
+vendor/firmware/evass-lt.b06
+vendor/firmware/evass-lt.b07
+vendor/firmware/evass-lt.b08
+vendor/firmware/evass-lt.b09
+vendor/firmware/evass-lt.b10
+vendor/firmware/evass-lt.b11
+vendor/firmware/evass-lt.b12
+vendor/firmware/evass-lt.b13
+vendor/firmware/evass-lt.b14
+vendor/firmware/evass-lt.b15
+vendor/firmware/evass-lt.b16
+vendor/firmware/evass-lt.b17
+vendor/firmware/evass-lt.b18
+vendor/firmware/evass-lt.b19
+vendor/firmware/evass-lt.mbn
+vendor/firmware/evass-lt.mdt
+
+# EVASS Firmware
+vendor/firmware/evass.b00
+vendor/firmware/evass.b01
+vendor/firmware/evass.b02
+vendor/firmware/evass.b03
+vendor/firmware/evass.b04
+vendor/firmware/evass.b05
+vendor/firmware/evass.b06
+vendor/firmware/evass.b07
+vendor/firmware/evass.b08
+vendor/firmware/evass.b09
+vendor/firmware/evass.b10
+vendor/firmware/evass.b11
+vendor/firmware/evass.b12
+vendor/firmware/evass.b13
+vendor/firmware/evass.b14
+vendor/firmware/evass.b15
+vendor/firmware/evass.b16
+vendor/firmware/evass.b17
+vendor/firmware/evass.b18
+vendor/firmware/evass.b19
+vendor/firmware/evass.mbn
+vendor/firmware/evass.mdt
+
 # Feature enabler client
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 
 # Fingerprint
+vendor/bin/hw/vendor.hardware.betterlife.fingerprint@1.0-service
+vendor/lib64/hw/blestech.fingerprint.default.so
 vendor/lib64/hw/fingerprint.ingot.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.hardware.betterlife.fingerprint@1.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -633,6 +700,13 @@ vendor/lib64/libllvm-glnext.so
 vendor/lib64/libllvm-qcom.so
 
 # Graphics (Adreno firmware)
+vendor/firmware/a615_zap.b00
+vendor/firmware/a615_zap.b01
+vendor/firmware/a615_zap.b02
+vendor/firmware/a615_zap.elf
+vendor/firmware/a615_zap.mdt
+vendor/firmware/a619_gmu.bin
+vendor/firmware/a630_sqe.fw
 vendor/firmware/a660_gmu.bin
 vendor/firmware/a660_sqe.fw
 vendor/firmware/a660_zap.b00
@@ -737,12 +811,24 @@ vendor/bin/vendor_modprobe.sh
 vendor/etc/init/hw/init.qti.kernel.rc
 
 # Keymaster
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
+vendor/bin/init.qti.keymaster.sh
+vendor/bin/keymasterd
+vendor/etc/init/keymasterd.rc
+vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
 vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterutils.so
 vendor/lib64/libqcbor.so
 vendor/lib64/libqtikeymaster4.so
+
+# Limits
+vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
+vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
+vendor/lib64/vendor.qti.hardware.limits@1.0.so
 
 # Listen
 vendor/lib/libcapiv2svacnn.so
@@ -779,6 +865,12 @@ vendor/etc/media_lahaina/video_system_specs.json
 # Mink-Lowi Interface daemon
 vendor/bin/mlid
 vendor/lib64/libminksocket.so
+
+# Neural-networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/lib64/unnhal-acc-common.so
 
 # NFC (Configs)
 vendor/etc/libnfc-hal-st.conf
@@ -828,8 +920,18 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
+# QCC - system_ext
+system_ext/lib64/libqcc_file_agent_sys.so
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so
+
 # QCC
-vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
+vendor/bin/qcc-trd
+vendor/etc/init/init.qdmastats.rc
+vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
+vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 
 # QCV
 vendor/bin/init.qti.qcv.sh
@@ -877,6 +979,12 @@ vendor/etc/seccomp_policy/qspm.policy
 vendor/lib/vendor.qti.qspmhal@1.0.so
 vendor/lib64/vendor.qti.qspmhal@1.0-impl.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
+
+# QTI service tracker
+vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
+vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
+vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml
+vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
 
 # RIL
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -1109,6 +1217,13 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 
+# SPU
+vendor/bin/hw/vendor.qti.spu@1.1-service
+vendor/etc/init/init.vendor.qti.spu@1.1-service.rc
+vendor/lib64/libqti-utils.so
+vendor/lib64/vendor.qti.spu@1.0.so
+vendor/lib64/vendor.qti.spu@1.1.so
+
 # Thermal engine
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
@@ -1144,8 +1259,53 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so
 
 # VPU Firmware
+vendor/firmware/vpu20_2v.b01
+vendor/firmware/vpu20_2v.b02
+vendor/firmware/vpu20_2v.b03
+vendor/firmware/vpu20_2v.b04
+vendor/firmware/vpu20_2v.b05
+vendor/firmware/vpu20_2v.b06
+vendor/firmware/vpu20_2v.b07
+vendor/firmware/vpu20_2v.b08
+vendor/firmware/vpu20_2v.b09
+vendor/firmware/vpu20_2v.b10
+vendor/firmware/vpu20_2v.b11
+vendor/firmware/vpu20_2v.b12
+vendor/firmware/vpu20_2v.b13
+vendor/firmware/vpu20_2v.b14
+vendor/firmware/vpu20_2v.b15
+vendor/firmware/vpu20_2v.b16
+vendor/firmware/vpu20_2v.b17
+vendor/firmware/vpu20_2v.b18
+vendor/firmware/vpu20_2v.b19
+vendor/firmware/vpu20_2v.mbn
+vendor/firmware/vpu20_2v.mdt
+vendor/firmware/vpu20_2v_unsigned.mbn
 vendor/firmware/vpu20_1v.b01
 vendor/firmware/vpu20_1v.b02
+vendor/firmware/vpu20_4v.b00
+vendor/firmware/vpu20_4v.b01
+vendor/firmware/vpu20_4v.b02
+vendor/firmware/vpu20_4v.b03
+vendor/firmware/vpu20_4v.b04
+vendor/firmware/vpu20_4v.b05
+vendor/firmware/vpu20_4v.b06
+vendor/firmware/vpu20_4v.b07
+vendor/firmware/vpu20_4v.b08
+vendor/firmware/vpu20_4v.b09
+vendor/firmware/vpu20_4v.b10
+vendor/firmware/vpu20_4v.b11
+vendor/firmware/vpu20_4v.b12
+vendor/firmware/vpu20_4v.b13
+vendor/firmware/vpu20_4v.b14
+vendor/firmware/vpu20_4v.b15
+vendor/firmware/vpu20_4v.b16
+vendor/firmware/vpu20_4v.b17
+vendor/firmware/vpu20_4v.b18
+vendor/firmware/vpu20_4v.b19
+vendor/firmware/vpu20_4v.mbn
+vendor/firmware/vpu20_4v.mdt
+vendor/firmware/vpu20_4v_unsigned.mbn
 vendor/firmware/vpu20_1v.b03
 vendor/firmware/vpu20_1v.b04
 vendor/firmware/vpu20_1v.b05
