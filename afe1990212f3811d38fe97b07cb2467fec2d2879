@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72952778_d8d7b3ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-03T06:21:42Z",
+      "side": 1,
+      "message": "if we don\u0027t support eSIM, there\u0027s more to kill..",
+      "revId": "afe1990212f3811d38fe97b07cb2467fec2d2879",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
