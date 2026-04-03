@@ -477,9 +477,6 @@ vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
 
-# Euicc - from otter SOS.6.2.G-RELEASE-20250624
-product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|74ccc6d238178529311808f5da3b383a03117bba
-
 # EVASS Firmware
 vendor/firmware/evass.b00
 vendor/firmware/evass.b01
