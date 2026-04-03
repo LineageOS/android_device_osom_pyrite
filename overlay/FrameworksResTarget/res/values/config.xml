@@ -34,31 +34,6 @@
          during initialization when the setting is still null. -->
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
-    <!-- An array of device capabilities defined by GSMA SGP.22 v2.0.
-         The first item is the capability name that the device supports. The second item is the
-         major version. The minor and revision versions are default to 0s.
-         The device capabilities and their definition in the spec are:
-             gsm : gsmSupportedRelease
-             utran : utranSupportedRelease
-             cdma1x : cdma2000onexSupportedRelease
-             hrpd : cdma2000hrpdSupportedRelease
-             ehrpd : cdma2000ehrpdSupportedRelease
-             eutran : eutranSupportedRelease
-             nfc : contactlessSupportedRelease
-             crl : rspCrlSupportedVersion
-             nrepc : nrEpcSupportedRelease
-             nr5gc : nr5gcSupportedRelease
-             eutran5gc : eutran5gcSupportedRelease
-    -->
-    <string-array name="config_telephonyEuiccDeviceCapabilities" translatable="false">
-        <item>gsm,9</item>
-        <item>utran,10</item>
-        <item>eutran,15</item>
-        <item>nrepc,15</item>
-        <item>nr5gc,15</item>
-        <item>eutran5gc,15</item>
-    </string-array>
-
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
 
@@ -100,10 +75,6 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
-
-    <!-- List of comma separated package names for which we the system will not show crash, ANR,
-         etc. dialogs. -->
-    <string name="config_appsNotReportingCrashes" translatable="false">com.google.android.euicc</string>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
