@@ -89,6 +89,12 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=0
 
+ifeq ($(WITH_CONSOLE),true)
+BOARD_KERNEL_CMDLINE += \
+    console=ttyMSM0,115200n8 \
+    earlycon=msm_geni_serial,0x98c000
+endif
+
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/ext_config/pyrite.config
