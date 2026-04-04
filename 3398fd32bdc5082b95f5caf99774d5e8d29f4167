@@ -16,6 +16,91 @@
       "message": "to thin down, but boots finally",
       "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3461c297_df6eefe2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-04T03:42:59Z",
+      "side": 1,
+      "message": "unrelated to this commit, but any reason to use prebuilt hwc there? you can easily move to oss one w/ `sunstone` display stack",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40f02ca9_a7c38995",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 563,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-04T03:42:59Z",
+      "side": 1,
+      "message": "-lt firmware is for shima only according to kernel device-tree",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "052d504d_abafab83",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 703,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-04T03:42:59Z",
+      "side": 1,
+      "message": "lahaina uses the a660_* firmware according to kernel device-tree",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a3a4ce4_b1db6c37",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 814,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-04T03:42:59Z",
+      "side": 1,
+      "message": "?",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "344e3e24_b0c42fb2",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1261,
+      "author": {
+        "id": 32253
+      },
+      "writtenOn": "2026-04-04T03:42:59Z",
+      "side": 1,
+      "message": "lahaina only uses vpu20_4v firmware according to kernel device-tree",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
