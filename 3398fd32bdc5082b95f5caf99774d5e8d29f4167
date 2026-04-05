@@ -35,6 +35,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "93d6e57e_949d6e59",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-05T12:15:47Z",
+      "side": 1,
+      "message": "It will be dealt with later",
+      "parentUuid": "3461c297_df6eefe2",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "40f02ca9_a7c38995",
@@ -48,6 +66,24 @@
       "writtenOn": "2026-04-04T03:42:59Z",
       "side": 1,
       "message": "-lt firmware is for shima only according to kernel device-tree",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bff0979a_eb6244ed",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 563,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-05T12:15:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "40f02ca9_a7c38995",
       "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
@@ -69,6 +105,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "460b1a6a_bf49685d",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 703,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-05T12:15:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "052d504d_abafab83",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7a3a4ce4_b1db6c37",
@@ -86,6 +140,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "51f196ad_a8785c57",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 814,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-05T12:15:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a3a4ce4_b1db6c37",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "344e3e24_b0c42fb2",
@@ -99,6 +171,24 @@
       "writtenOn": "2026-04-04T03:42:59Z",
       "side": 1,
       "message": "lahaina only uses vpu20_4v firmware according to kernel device-tree",
+      "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7bfbfce_fd839914",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 3
+      },
+      "lineNbr": 1261,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-05T12:15:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "344e3e24_b0c42fb2",
       "revId": "3398fd32bdc5082b95f5caf99774d5e8d29f4167",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
