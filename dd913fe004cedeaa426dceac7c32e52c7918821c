@@ -16,6 +16,24 @@
       "message": "this was originally made with --dir-first?\n\nThat would get rid of this and other diffs",
       "revId": "dd913fe004cedeaa426dceac7c32e52c7918821c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84cbe181_4d3395a6",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-04-06T21:12:23Z",
+      "side": 1,
+      "message": "The tree that this is based on (and all the other devices that branched off it) don\u0027t use --dir-first, so I undid that in this commit",
+      "parentUuid": "608aad3f_ff1c63a9",
+      "revId": "dd913fe004cedeaa426dceac7c32e52c7918821c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
