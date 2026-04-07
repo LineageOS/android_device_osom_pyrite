@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b128a31_c53487c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-04-07T06:00:09Z",
+      "side": 1,
+      "message": "Got confirmation, SPU stuff never worked - intent was to remove secure element and go this route",
+      "revId": "3cf246fdab543ac910244c3acaea2e2cd6676bbc",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
