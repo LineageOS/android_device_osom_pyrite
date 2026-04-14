@@ -1,6 +1,6 @@
 # All firmware images below are extracted from the release mentioned in proprietary-files.txt
 
-abl.elf:abl.img;AB
+abl.elf:abl.img;AB|1f59b642d50a87ab190e194f9853ac03347e4ae4
 aop.mbn:aop.img;AB
 BTFM.bin:bluetooth.img;AB
 cpucp.elf:cpucp.img;AB
