@@ -4,14 +4,14 @@
 # com.qti.stats.af.so, com.qti.stats.haf.so, libarcsoft_portrait_super_night_raw.so depend on the following symbol: __emutls_get_address
 
 # ACDB
-vendor/etc/acdbdata/Ingot/INGOT_Bluetooth_cal.acdb
-vendor/etc/acdbdata/Ingot/INGOT_General_cal.acdb
-vendor/etc/acdbdata/Ingot/INGOT_Global_cal.acdb
-vendor/etc/acdbdata/Ingot/INGOT_Handset_cal.acdb
-vendor/etc/acdbdata/Ingot/INGOT_Hdmi_cal.acdb
-vendor/etc/acdbdata/Ingot/INGOT_Headset_cal.acdb
-vendor/etc/acdbdata/Ingot/INGOT_Speaker_cal.acdb
-vendor/etc/acdbdata/Ingot/INGOT_workspaceFile.qwsp
+vendor/etc/acdbdata/Ingot/INGOT_Bluetooth_cal.acdb:vendor/etc/acdbdata/Pyrite/PYRITE_Bluetooth_cal.acdb
+vendor/etc/acdbdata/Ingot/INGOT_General_cal.acdb:vendor/etc/acdbdata/Pyrite/PYRITE_General_cal.acdb
+vendor/etc/acdbdata/Ingot/INGOT_Global_cal.acdb:vendor/etc/acdbdata/Pyrite/PYRITE_Global_cal.acdb
+vendor/etc/acdbdata/Ingot/INGOT_Handset_cal.acdb:vendor/etc/acdbdata/Pyrite/PYRITE_Handset_cal.acdb
+vendor/etc/acdbdata/Ingot/INGOT_Hdmi_cal.acdb:vendor/etc/acdbdata/Pyrite/PYRITE_Hdmi_cal.acdb
+vendor/etc/acdbdata/Ingot/INGOT_Headset_cal.acdb:vendor/etc/acdbdata/Pyrite/PYRITE_Headset_cal.acdb
+vendor/etc/acdbdata/Ingot/INGOT_Speaker_cal.acdb:vendor/etc/acdbdata/Pyrite/PYRITE_Speaker_cal.acdb
+vendor/etc/acdbdata/Ingot/INGOT_workspaceFile.qwsp:vendor/etc/acdbdata/Pyrite/PYRITE_workspaceFile.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd
