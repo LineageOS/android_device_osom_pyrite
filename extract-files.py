@@ -50,6 +50,30 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libsnapdragoncolor-manager.so',
     ): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    (
+        'proprietary/vendor/etc/sensors/config/lahaina_pyrite_ltr2568_0.json',
+       'proprietary/vendor/etc/sensors/config/lahaina_qrd_sx932x_0.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_irq.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_pyrite_icp101xx_0.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_default_sensors.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_tcs3410_0.json',
+        'proprietary/vendor/etc/sensors/config/sns_device_orient.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_tmd2635_0.json',
+        'proprietary/vendor/etc/sensors/config/sns_diag_filter.json',
+        'proprietary/vendor/etc/sensors/config/sns_mag_cal.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_sx932x_0.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_dynamic_sensors.json',
+        'proprietary/vendor/etc/sensors/config/sns_gyro_cal.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_pyrite_icm4x6xx_0.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_bu52053nvx_0.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_ak991x_0.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_pyrite_lsm6dst_0.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_lps22hh_0.json',
+        'proprietary/vendor/etc/sensors/config/sns_dae.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_pyrite_stk3a6x_0.json',
+        'proprietary/vendor/etc/sensors/config/lahaina_pyrite_ak991x_0.json',
+    ): blob_fixup()
+        .regex_replace('Ingot', 'Pyrite')
     'vendor/lib64/libwvhidl.so': blob_fixup()
         .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
