@@ -133,7 +133,11 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service
+    android.hardware.biometrics.fingerprint@2.3-service.pyrite
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/idc/betterlife_inputdev.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/betterlife_inputdev.idc \
+    $(LOCAL_PATH)/keylayout/betterlife_inputdev.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/betterlife_inputdev.kl
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -178,6 +182,7 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom.vendor_ramdisk \
     init.class_main.sh \
+    init.target.fingerprint.detect.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \

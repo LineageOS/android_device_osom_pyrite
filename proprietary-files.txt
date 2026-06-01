@@ -505,8 +505,12 @@ vendor/firmware/evass.mdt
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 
-# Fingerprint
-vendor/lib64/hw/fingerprint.ingot.so
+# Fingerprint (BetterLife) - from ingot-user 14 UKQ1.240227.165 165 release-keys
+vendor/lib64/hw/fingerprint.betterlife.so:fingerprint.btl_fingerprint.default.so|c86902357576d9b27caf6fcd59811a402e7ae3e9
+vendor/lib64/libBtlFpHal.so|0e80c89767ca5965d630d7e6e84adfb0cafb3da5
+
+# Fingerprint (Goodix)
+vendor/lib64/hw/fingerprint.ingot.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
