@@ -202,8 +202,13 @@ on boot
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
+    # Goodix fingerprint
     chown system system /dev/goodix_fp
     chmod 0660 /dev/goodix_fp
+
+    # BetterLife fingerprint
+    chmod 0666 /dev/blf
+    chown system system /dev/blfp
 
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
@@ -370,6 +375,10 @@ on post-fs-data
     #Create dir for TUI
     mkdir /data/vendor/tui 0700 system drmrpc
 
+    # BetterLife fingerprint
+    mkdir /data/vendor/blfp 0777 system system
+
+    # Goodix fingerprint
     mkdir /data/vendor/goodix 0770 system system
     mkdir /data/vendor/goodix/gf_data 0770 system system
     restorecon /data/vendor/goodix/gf_data
