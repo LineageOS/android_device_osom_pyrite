@@ -506,11 +506,15 @@ vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.ingot.so
+vendor/lib64/hw/fingerprint.ingot.so:vendor/lib64/hw/fingerprint.goodix.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@2.1.so
+
+# Fingerprint - from ingot-user 14 UKQ1.240227.165 165 release-keys
+vendor/lib64/hw/fingerprint.betterlife.so
+vendor/lib64/libBtlFpHal.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti

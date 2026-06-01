@@ -1,2 +1,5 @@
 # Fingerprint
-/dev/goodix_fp                                                             u:object_r:fingerprint_device:s0
+/dev/blfp         u:object_r:fingerprint_device:s0
+/dev/goodix_fp    u:object_r:fingerprint_device:s0
+
+/vendor/bin/init\.target\.fingerprint\.detect\.sh         u:object_r:vendor_init_fingerprint_exec:s0
