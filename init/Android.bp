@@ -45,6 +45,18 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.target.fingerprint.detect.sh",
+    src: "init.target.fingerprint.detect.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.target.fingerprint.load_module.sh",
+    src: "init.target.fingerprint.load_module.sh",
+    vendor: true,
+}
+
+sh_binary {
     name: "init.qcom.early_boot.sh",
     src: "init.qcom.early_boot.sh",
     vendor: true,

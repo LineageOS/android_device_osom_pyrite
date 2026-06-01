@@ -1,3 +1,6 @@
+# Fingerprint
+genfscon sysfs /devices/platform/soc/0.fingerprint/wakeup    u:object_r:sysfs_wakeup:s0
+
 # Touchscreen
 genfscon sysfs /devices/platform/soc/990000.i2c/i2c-1/1-0038/fts_gesture_mode    u:object_r:vendor_sysfs_touchpanel:s0
 
