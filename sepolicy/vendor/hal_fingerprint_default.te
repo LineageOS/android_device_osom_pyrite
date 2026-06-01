@@ -10,3 +10,6 @@ allow hal_fingerprint_default vendor_data_file:file create_file_perms;
 
 # gf.debug.fp_vendor
 dontaudit hal_fingerprint_default default_prop:property_service set;
+
+allow hal_fingerprint_default vendor_dmabuf_qseecom_heap_device:chr_file r_file_perms;
+allow hal_fingerprint_default vendor_dmabuf_qseecom_ta_heap_device:chr_file r_file_perms;
