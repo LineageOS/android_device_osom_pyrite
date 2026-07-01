@@ -188,6 +188,9 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# ION
+$(call soong_config_set_bool,legacy_impl,enabled,true)
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
