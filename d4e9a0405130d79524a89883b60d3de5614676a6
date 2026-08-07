@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8c303b0_6d2e8af4",
+        "filename": "vibrator/effect/effect.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2026-08-07T11:52:24Z",
+      "side": 1,
+      "message": "whitespace",
+      "revId": "d4e9a0405130d79524a89883b60d3de5614676a6",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
