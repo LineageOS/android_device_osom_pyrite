@@ -30,7 +30,7 @@
     </string-array>
 
     <!-- Whether to adopt the predefined handover policies for IWLAN.
-         {@see CarrierConfigManager#KEY_IWLAN_HANDOVER_POLICY_STRING_ARRAY}
+         @see CarrierConfigManager#KEY_IWLAN_HANDOVER_POLICY_STRING_ARRAY
     -->
     <bool name="config_enable_iwlan_handover_policy">false</bool>
 
